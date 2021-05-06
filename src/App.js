@@ -22,13 +22,15 @@ const list = [
 function App() {
   return (
     <div>
-      <h1> My Hacker Stories </h1>
+      {/* <h1> My Hacker Stories </h1>
     
     <label htmlFor="search"> Search: </label>
-    <input id="search" type="text" />
+    <input id="search" type="text" /> */}
 
     <hr/>
-
+     {list.map(function(item) {
+       return <div> {item.title} </div>
+     })}
     {/* render the list here */}
     </div>
   );
